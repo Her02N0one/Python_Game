@@ -13,13 +13,15 @@ def initWindow():
     input()
 
 def update():
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      running = False
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+def render():
 
 
+initWindow()
 def run():
-    initWindow()
     Running = True
     while Running:
         update()
+        render()
